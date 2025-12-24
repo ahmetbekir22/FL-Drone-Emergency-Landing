@@ -1,7 +1,6 @@
-# 📄 README. md (Emoji'siz, Düzgün Format)
+# Federated Drone Emergency Landing
 
 ```markdown
-# Federated Drone Emergency Landing
 
 Network-resilient federated learning system where 5 drones learn to detect safe emergency landing zones from 3D point clouds despite adverse network conditions — without sharing raw data.
 
