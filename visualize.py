@@ -58,7 +58,7 @@ def plot_federated_results():
     
     plt.tight_layout()
     plt.savefig('federated_results.png', dpi=300, bbox_inches='tight')  # BOŞLUK SİLİNDİ
-    print("✅ Grafik kaydedildi:  federated_results.png")
+    print(" Grafik kaydedildi:  federated_results.png")
     plt.show()
 
 def plot_drone_comparison():

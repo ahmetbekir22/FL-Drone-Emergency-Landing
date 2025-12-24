@@ -10,7 +10,7 @@ class DroneClient(fl.client.NumPyClient):
     """
     Flower Client - Her drone bir client
     """
-    def __init__(self, drone_id, epochs_per_round=5):
+    def __init__(self, drone_id, epochs_per_round=8):
         self.drone_id = drone_id
         self.epochs_per_round = epochs_per_round
         
@@ -100,18 +100,20 @@ def start_client(drone_id, server_address="127.0.0.1:8080"):
         client=client. to_client()
     )
 
-if __name__ == "__main__":
+
+if __name__ == "__main__": 
     import sys
     
     if len(sys.argv) < 2:
-        print("   Kullanım: python client.py <drone_id>")
+        print(" Kullanım: python client.py <drone_id>")
         print("   Örnek: python client.py 1")
+        print("   Drone ID:  1-5 arası")
         sys.exit(1)
     
     drone_id = int(sys.argv[1])
     
-    if drone_id not in [1, 2, 3]:
-        print(f" Geçersiz drone_id: {drone_id}. 1, 2 veya 3 olmalı.")
+    if drone_id not in [1, 2, 3, 4, 5]:
+        print(f" Geçersiz drone_id: {drone_id}. 1-5 arası olmalı.")
         sys.exit(1)
     
     print(f" Drone {drone_id} Client başlatılıyor...")
