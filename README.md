@@ -1,6 +1,5 @@
 # Federated Drone Emergency Landing
 
-```markdown
 
 Network-resilient federated learning system where 5 drones learn to detect safe emergency landing zones from 3D point clouds despite adverse network conditions — without sharing raw data.
 
